@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+ </head>
+  <body>
+    
+
+
+<form action="{{ url_for('register') }}" method="post">
+  <div class="msg"> {{ msg }}</div>
+  <h3>Donor Registration</h3>
+
+
+ 
+  <label for="name1">Full Name</label>
+  <input type="text" name="name1" placeholder="Enter Full Name" id="name1">
+
+  <label for="blood">Blood Group</label>
+  <input type="text" name="blood" placeholder="Enter Blood Group" id="blood">
+
+  <label for="email">Email</label>
+  <input type="email" name="email" placeholder="Enter Email ID" id="email">
+
+  <label for="password1">Password</label>
+  <input type="password" name="password1" placeholder="Password" id="password1">
+  
+  <label for="phone">Phone Number</label>
+  <input type="number" name="phone" placeholder="Enter phone number" id="phone">
+
+  <label for="gender">Gender</label>
+  <input type="text" name="gender" placeholder="Enter Gender" id="gender">
+
+  <label for="age1">Age</label>
+  <input type="number" name="age1" placeholder="Enter Age" id="age1">
+
+  <label for="address">Address</label>
+  <textarea name="address1" aria-placeholder="Enter address" id="address">
+  </textarea>
+
+  <label for="district">District</label>
+  <input type="text" name="district" placeholder="Enter District" id="district">
+
+  <label for="state1">State</label>
+  <input type="state" name="state1" placeholder="Enter State" id="state1">
+
+  <label for="illness">Do you have any Disease/ Illness?</label>
+  <input type="illness" name="illness" placeholder="Yes/No" id="Illness">
+
+
+
+
+
+
+
+  
+
+
+  <!-- <label for="password">Password</label>
+  <input type="password" name="password" placeholder="Password" id="password"> -->
+<a>
+  <button href="/register">Register Now</button>
+
+</a>
+
+</form>
+  <!-- <form action="{{ url_for('register') }}" method="post">
+                    
+     
+  
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+  </form> -->
+    
+  </body>
+</html>
