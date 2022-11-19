@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+      <link rel="stylesheet" href="{{ url_for('static', filename='rr.css') }}">
+ </head>
+  <body>
+    
+
+
+<form action="{{ url_for('recipient') }}" method="post">
+  <div class="msg"> {{ msg }}</div>
+  <h3>Recipient Registration</h3>
+
+
+ 
+  <label for="adname">ADMIN ORGANISATION </label>
+  <input type="text" name="adname" placeholder="Enter your Organisation name..." id="adname">
+
+  <label for="ademail">ADMIN EMAIL</label>
+  <input type="text" name="ademail" placeholder="Enter your email" id="ademail">
+
+  <label for="pname">PATIENT'S NAME </label>
+  <input type="text" name="pname" placeholder="Enter Patient's name" id="pname">
+
+  <label for="pblood">PATIENT'S BLOOD GROUP</label>
+  <input type="text" name="pblood" placeholder="Enter Patient's blood Group" id="pblood">
+  
+  <label for="page">PATIENT'S AGE</label>
+  <input type="number" name="page1" placeholder="Enter age" id="page">
+
+  <label for="trequest">TYPES OF REQUEST</label>
+  <input type="text" name="trequest" placeholder="Enter whether Emergency/routine/urgent" id="trequest">
+
+
+  
+
+  <label for="pphone">PHONE NUMBER</label>
+  <input type="text" name="pphone" placeholder="Enter Phone Number" id="pphone">
+
+  <label for="paddress">ADDRESS</label>
+  <textarea type="text" name="paddress" placeholder="Enter Address" id="paddress">
+  </textarea>
+  
+  <a>
+    <button href="/recipient">SUBMIT</button>
+  
+  </a>
+  
+  </form>
+
+
+
+
+
+
+  
+
+
+  <!-- <label for="password">Password</label>
+  <input type="password" name="password" placeholder="Password" id="password"> -->
+
+  <!-- <form action="{{ url_for('register') }}" method="post">
+                    
+     
+  
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+  </form> -->
+    
+  </body>
+</html>
