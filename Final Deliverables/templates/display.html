@@ -1,0 +1,38 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='list.css') }}">
+ 
+	</head>
+	<body>
+<div>
+	<center>
+	
+    <div class="name"><span>DONORS</span></div>
+     <div class="val">
+		
+            {% for val in data %}
+            <div>{{val}}</div>
+            {% endfor %} 
+		</div>
+
+	    {% if state == "SENT" %}
+    </table>
+		
+</center>
+
+	
+	    <div class="mail " >Request Email Sent Successfully...! </div>
+		
+		
+	    {% else %}
+	    <form action="/send_email" method="post">
+		    <input hidden name="blood" value="{{blood}}"/>	    
+	    <button type="submit" class="button1">SEND REQUEST</button> 
+	    </form>
+	    {% endif %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
