@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+      <link rel="stylesheet" href="{{ url_for('static', filename='list.css') }}">
+ 
+</head>
+<body>
+  <form action="{{ url_for('display') }}" method="post">
+    <center>
+    
+      <label for="blood">BLOOD GROUP</label><br>
+      <input type="text" id="blood" name="blood"><br>
+    
+    <div class="btn">
+      <button>Donors list</button>
+    </div>
+    </center>
+
+  </form>
+  </body>
+
+  
+  
+
+
